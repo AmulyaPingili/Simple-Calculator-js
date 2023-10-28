@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator using javascript - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="calc">
+<form>
+  <div class="displayed">
+    <input type="text" name="displayed"> 
+  </div>
+  <div>
+    <input type="button" value="AC" onclick="displayed.value =''"> 
+    <input type="button" value="Del" onclick="displayed.value = displayed.value.toString().slice(0,-1)"> 
+    <input type="button" value="."onclick="displayed.value +='.'"> 
+    <input type="button" value="/" onclick="displayed.value +='/'"> 
+  </div>
+  <div>
+    <input type="button" value="7" onclick="displayed.value += '7'"> 
+    <input type="button" value="8" onclick="displayed.value +='8'" > 
+    <input type="button" value="9" onclick="displayed.value +='9'"> 
+    <input type="button" value="*" onclick="displayed.value +='*'"> 
+  </div>
+  <div>
+    <input type="button" value="4" onclick="displayed.value +='4'"> 
+    <input type="button" value="5" onclick="displayed.value +='5'"> 
+    <input type="button" value="6" onclick="displayed.value +='6'"> 
+    <input type="button" value="-" onclick="displayed.value +='-'"> 
+  </div>
+  <div>
+    <input type="button" value="1" onclick="displayed.value +='1'"> 
+    <input type="button" value="2" onclick="displayed.value +='2'"> 
+    <input type="button" value="3" onclick="displayed.value +='3'"> 
+    <input type="button" value="+" onclick="displayed.value +='+'"> 
+  </div>
+  <div>
+    <input type="button" value="00" onclick="displayed.value +='00'"> 
+    <input type="button" value="0" onclick="displayed.value +='0'"> 
+    <input type="button" value="="  onclick="displayed.value = eval(displayed.value)" class="equal"> 
+  </div>
+</form>
+</div>
+</div>
+</body> 
+</html>
